@@ -38,10 +38,6 @@ alias wp='cd /Users/taoxin/workspace'
 alias summary='cd ~/Summary'
 alias bili='cd /Users/taoxin/workspace/bilibili'
 
-# Digital Ocean VPS
-alias vps='ssh root@188.166.226.246'
-alias gcp='ssh root@35.185.131.101'
-
 # dev
 alias dev='npm run dev'
 alias serve='npm run serve'
