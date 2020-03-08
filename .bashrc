@@ -20,7 +20,7 @@ alias gpom='git push origin master'
 alias npx='npx --no-install'
 
 # custom software
-alias vim='/Applications/MacVim.app/Contents/bin/vim'
+alias vim='/usr/bin/vim'
 alias vi='vim'
 alias v='vim'
 alias vrc='vim ~/.vimrc'
@@ -36,12 +36,14 @@ PS1='\[\e[36;1m\][\u@MBP \W]$ \[\e[0m\]'
 export PATH=$PATH:$HOME/bin
 alias wp='cd /Users/taoxin/workspace'
 alias summary='cd ~/Summary'
-alias bili='cd /Users/taoxin/workspace/bilibili'
 
 # dev
 alias dev='npm run dev'
+alias start='npm run start'
 alias serve='npm run serve'
 alias build='npm run build'
+alias ngc='vim /usr/local/etc/nginx/nginx.conf'
+alias brs='brew services restart nginx'
 
 # hosts
 alias host='vim /private/etc/hosts'
@@ -70,3 +72,17 @@ alias gd="godoc -http=:6060"
 
 # flutter path
 export PATH="$PATH:/Users/taoxin/workspace/flutter/bin"
+
+# source the file git-completion.bash
+if [ -f ~/.git-completion.bash ]; then
+  source ~/.git-completion.bash
+fi
+
+# this will prompt the branch
+# i have modified the git-promt.sh file so that the PS1 will displayed as i hope it to be.
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWCOLORHINTS=true
+if [ -f ~/.git-completion.bash ]; then
+  source ~/.git-prompt.sh
+  PROMPT_COMMAND='__git_ps1 "[\t][\u@\h:\w]" "\\\$ "'
+fi
