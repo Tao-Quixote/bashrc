@@ -335,14 +335,14 @@ __git_ps1 ()
 	local pcmode=no
 	local detached=no
 	# local ps1pc_start='\u@\h:\w '
-	local ps1pc_start='\[\e[36;1m\][\u@MBP \W]$ \[\e[0m\]'
-	local ps1pc_end='\$ '
-	local printf_format=' (%s)'
+	local ps1pc_start='\[\e[36;1m\][\u@MBP \W]$\[\e[0m\]'
+	local ps1pc_end=' '
+	local printf_format='(%s)'
 
 	case "$#" in
 		2|3)	pcmode=yes
                         # i have modified the line so that PS1 will prompt as i wish.
-			ps1pc_start='\[\e[36;1m\][\u@MBP \W]$ \[\e[0m\]'
+			ps1pc_start='\[\e[36;1m\][\u@MBP \W]\[\e[0m\]'
 			ps1pc_end="$2"
 			printf_format="${3:-$printf_format}"
 			# set PS1 to a plain prompt so that we can
