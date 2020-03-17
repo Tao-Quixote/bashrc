@@ -15,6 +15,11 @@ alias gcom='git commit -m'
 alias gs='git status'
 alias gpo='git push origin'
 alias gpom='git push origin master'
+alias g='/usr/bin/git'
+# view all git branches in oneline format with graph
+alias gag='/usr/bin/git log --all --decorate --oneline --graph'
+# view current branch in oneline format with graph
+alias gg='/usr/bin/git log --oneline --graph'
 
 # npm
 alias npx='npx --no-install'
@@ -25,7 +30,7 @@ alias vi='vim'
 alias v='vim'
 alias vrc='vim ~/.vimrc'
 
-alias g='/usr/bin/git'
+alias md='/usr/local/bin/macdown'
 
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args'
 alias chromeFile='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --allow-file-access-from-files'
@@ -86,3 +91,4 @@ if [ -f ~/.git-completion.bash ]; then
   source ~/.git-prompt.sh
   PROMPT_COMMAND='__git_ps1 "[\t][\u@\h:\w]" "\\\$ "'
 fi
+
