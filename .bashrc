@@ -16,19 +16,23 @@ alias gs='git status'
 alias gpo='git push origin'
 alias gpom='git push origin master'
 alias g='/usr/bin/git'
+alias gl='/usr/bin/git log'
 # view all git branches in oneline format with graph
 alias gag='/usr/bin/git log --all --decorate --oneline --graph'
 # view current branch in oneline format with graph
 alias gg='/usr/bin/git log --oneline --graph'
 
 # npm
-alias npx='npx --no-install'
+# alias npx='npx --no-install'
 
 # custom software
 alias vim='/usr/bin/vim'
 alias vi='vim'
 alias v='vim'
 alias vrc='vim ~/.vimrc'
+
+alias bashrc='/usr/bin/vim ~/.bashrc'
+alias sourcebash='.  ~/.bashrc'
 
 alias md='/usr/local/bin/macdown'
 
@@ -47,6 +51,7 @@ alias dev='npm run dev'
 alias start='npm run start'
 alias serve='npm run serve'
 alias build='npm run build'
+alias flow='yarn flow'
 alias ngc='vim /usr/local/etc/nginx/nginx.conf'
 alias brs='brew services restart nginx'
 
@@ -71,9 +76,6 @@ if [ -f '~/.git-completion.bash' ]; then
 fi
 
 export PATH="/Users/taoxin/.deno/bin:$PATH:$GOPATH/bin"
-
-alias gun="cd /Users/taoxin/workspace/go/src/go-common/app/admin/live/live-admin/cmd; env group=qa01 DEPLOY_ENV=uat go run main.go -conf test.toml -appid=test -deploy.env=uat -trace='udp://172.16.33.46:5140?timeout=20ms&chan=1024' -log.stdout=true -log.agent='udp://172.16.0.204:514/?timeout=100ms&chan=1024'"
-alias gd="godoc -http=:6060"
 
 # flutter path
 export PATH="$PATH:/Users/taoxin/workspace/flutter/bin"
