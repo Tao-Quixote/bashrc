@@ -53,6 +53,10 @@ alias serve='npm run serve'
 alias build='npm run build'
 alias flow='yarn flow'
 alias ngc='vim /usr/local/etc/nginx/nginx.conf'
+alias homeai='vim /usr/local/etc/nginx/servers/homeai.conf'
+alias homeaissl='vim /usr/local/etc/nginx/servers/homeaissl.conf'
+alias shejijia='vim /usr/local/etc/nginx/servers/shejijia.conf'
+alias sjj='vim /usr/local/etc/nginx/servers/sjj.conf'
 alias brs='brew services restart nginx'
 
 # hosts
