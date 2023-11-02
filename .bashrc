@@ -51,6 +51,8 @@ alias dev='npm run dev'
 alias start='npm run start'
 alias serve='npm run serve'
 alias build='npm run build'
+alias builddev='npm run build-dev'
+alias develop='npm run develop'
 alias flow='yarn flow'
 alias ngc='vim /usr/local/etc/nginx/nginx.conf'
 alias homeai='vim /usr/local/etc/nginx/servers/homeai.conf'
@@ -58,6 +60,9 @@ alias homeaissl='vim /usr/local/etc/nginx/servers/homeaissl.conf'
 alias shejijia='vim /usr/local/etc/nginx/servers/shejijia.conf'
 alias sjj='vim /usr/local/etc/nginx/servers/sjj.conf'
 alias brs='brew services restart nginx'
+
+# openglserver
+alias openglServe='cd /Users/tx/work/LearnOpenGL-CN && mkdocs serve'
 
 # hosts
 alias host='vim /private/etc/hosts'
@@ -97,4 +102,5 @@ if [ -f ~/.git-completion.bash ]; then
   source ~/.git-prompt.sh
   PROMPT_COMMAND='__git_ps1 "[\t][\u@\h:\w]" "\\\$ "'
 fi
+
 
